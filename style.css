@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: italic;
+	color: burlywood;
+	font-size: 20px;
+}
+  
+  header{
+  	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../vi.png);
+   	height: 200vh;
+  	background-size: cover;
+  	background-position: center;
+  }
+
+  ul{
+  	float: right;
+  	list-style-type: none;
+  	margin-top: 25px;
+  	
+
+
+  }
+  .main ul li{
+  	display: inline-block ;
+  }
+
+ .main  ul li a{
+
+  	text-decoration: none;
+  	color: #black;
+  	padding: 10px 30px;
+  	border: 1px solid transparent;
+  	transition: 0.6s ease;
+  }
+
+  .logo img{
+  	float: left;
+  	width: 100px;
+  	height: auto ;
+  	background-color: seashell;	
+  }
+  .main{
+  	max-width: 1200px;
+  	margin: auto;
+  }  
+
+ .title {
+ 	position: absolute;
+ 	top: 70%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ 	transition: 0.6s ease;
+ 	
+ }
+.main ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background:peachpuff ;
+  display:block;
+  margin:auto;
+  transition: 0.5s;
+}
+.main ul li:hover::after{
+  width:100%;
+}
+.text-box{
+  width: 90%;
+  color: peachpuff;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 62px;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color:white;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover{
+  border:1px solid lightcoral;
+  background:lightcoral;
+  transition: 2s;
+
+}
+@media(max-width: 700px){
+  .text-box h1{
+  font-size: 20px;
+}
+.main ul li{
+ display:block;
+ }
+ .main{
+  position: absolute;
+  background: #peachpuff;
+  height: 100vh;
+  width: 200px;
+  top: 0;
+  right: 0;
+  text-align: left;
+  z-index: 2;
+ }
+}
